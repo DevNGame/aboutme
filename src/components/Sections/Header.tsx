@@ -127,7 +127,7 @@ const NavItem: FC<{
   return (
     <Link
       className={classNames(current ? activeClass : inactiveClass)}
-      href={`/#${section}`}
+      href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}#${section}`}
       key={section}
       onClick={onClick}>
       {section}

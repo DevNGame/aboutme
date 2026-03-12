@@ -81,7 +81,7 @@ export const heroData: Hero = {
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: `#${SectionId.Contact}`,
+      href: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}#${SectionId.Contact}`,
       text: 'Contact',
       primary: false,
       Icon: EnvelopeIcon,

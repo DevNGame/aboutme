@@ -1,7 +1,10 @@
 /* eslint-env node */
 
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const nextConfig = {
+  assetPrefix: basePath ? `${basePath}/` : undefined,
+  basePath: basePath || undefined,
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
