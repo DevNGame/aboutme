@@ -10,9 +10,8 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title})
     <>
       <Head>
         <title>{title}</title>
-        <link href="/favicon.ico" rel="icon" sizes="any" />
-        <link href="/icon.svg" rel="icon" type="image/svg+xml" />
-        <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+        <link href="/icon.png" rel="icon" type="image/png" />
+        <link href="/icon.png" rel="apple-touch-icon" />
         <link href="/site.webmanifest" rel="manifest" />
       </Head>
       {children}
