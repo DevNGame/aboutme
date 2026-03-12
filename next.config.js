@@ -17,6 +17,7 @@ const nextConfig = {
   },
   compress: true,
   generateEtags: true,
+  output: 'export',
   pageExtensions: ['tsx', 'mdx', 'ts'],
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
