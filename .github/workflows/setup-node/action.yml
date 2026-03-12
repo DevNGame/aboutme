@@ -14,11 +14,9 @@ runs:
       uses: actions/cache@v4
       with:
         path: node_modules
-        key: node-modules-${{ hashFiles('package-lock.json') }}
+        key: node-modules-${{ hashFiles('yarn.lock') }}
 
     - name: Install dependencies 🔧
       shell: bash
       if: steps.cache_dependencies.outputs.cache-hit != 'true'
-      run: npm ci
-      env:
-        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      run: yarn install --frozen-lockfile
