@@ -14,7 +14,6 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.png';
 import profilepic from '../images/profilepic.png';
-
 import {
   About,
   ContactSection,
