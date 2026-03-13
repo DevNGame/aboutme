@@ -65,7 +65,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm India based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        I'm <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
         at <strong className="text-stone-100">Adobe Incorporated</strong> helping build scalable solutions to power products across the Globe.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -263,7 +263,7 @@ export const education: TimelineItem[] = [
     date: 'August 2015',
     location: 'New Delhi, India',
     title: 'Bachelor of Technology in Computer Science',
-    content: <p></p>,
+    content: <p>Guru Gobind Singh Indraprastha University</p>,
   }
 ];
 
